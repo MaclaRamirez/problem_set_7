@@ -1,6 +1,8 @@
 # We want the following function to median-filter the arrays (as in Problem Set
 # 4) but it looks like there is an issue in the plot - the red curve should
 # follow the blue points better. What is happening?
+#The problem is that the step given is too big, so the median-filter does
+#not work properly. We have to change the size of the step, for examble to 1.
 
 import numpy as np
 np.random.seed(12345)  # ensures the random values are always the same
