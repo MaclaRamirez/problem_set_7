@@ -2,7 +2,7 @@
 # 4) but it looks like there is an issue in the plot - the red curve should
 # follow the blue points better. What is happening?
 #The problem is that the step given is too big, so the median-filter does
-#not work properly. We have to change the size of the step, for examble to 1.
+#not work properly. We have to change the size of the step, for examble to 1.2
 
 import numpy as np
 np.random.seed(12345)  # ensures the random values are always the same
@@ -23,5 +23,5 @@ y = 10. * np.cos(x / 10.) + np.random.normal(0., 5., n)
 fig = plt.figure()
 ax = fig.add_subplot(1, 1, 1)
 ax.plot(x, y, '.')
-ax.plot(x, median_filter(x, y, 5), color='red', lw=3)
+ax.plot(x, median_filter(x, y, 1.2), color='red', lw=3)
 fig.savefig('example_4.png')
