@@ -10,6 +10,8 @@
 # Integral is: 2099.999499
 #
 # why is this not working?
+#It is not working because the order of the parameters given to the integration
+#method is wrong, we want to integrate 'y' w.r.t 'x'. 
 
 import numpy as np
 from scipy.integrate import trapz
