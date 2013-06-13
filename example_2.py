@@ -1,7 +1,9 @@
+# -*- coding: utf-8 -*-
 # In the following example, we start off with a list of values, and we add some
 # new values to them. We now want to find the difference between the mean of
 # the original list of values, and the new list of values. This should give
 # 0.625 but it gives 0.0 instead. Why is this?
+
 
 import numpy as np
 
@@ -16,4 +18,6 @@ new_values.append(2.)
 new_values.append(1.)
 new_values.append(5.)
 
+print values
+print new_values
 print "Difference in the mean:", np.mean(new_values) - np.mean(values)
