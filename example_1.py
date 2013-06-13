@@ -7,6 +7,10 @@
 #
 # Why does it not work?
 
+#It does not work because the sort() method " modifies the list 
+#in-place (and returns None to avoid confusion)", so it is better
+#to use sorted().
+
 # The following is so that it works with Python 3 too
 from __future__ import print_function
 
