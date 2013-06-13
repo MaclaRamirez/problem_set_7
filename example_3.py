@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # We want the following to compute the integral of the function
 #
 # y = 3. * x ** 2 + 2. * x + 1.
